@@ -1,5 +1,4 @@
-// Radar Detector - Processing Code
-import processing.serial.*;  // ✅ Fixed: was 'processing.serial.\*'
+import processing.serial.*;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
 
@@ -18,7 +17,7 @@ PFont orcFont;
 void setup() {
   size(1200, 700); // Change to your screen resolution
   smooth();
-  myPort = new Serial(this, "COM5", 9600); // ⚠️ Change COM5 to your port (e.g., COM3, /dev/ttyUSB0)
+  myPort = new Serial(this, "COM5", 9600); 
   myPort.bufferUntil('.');
 }
 
